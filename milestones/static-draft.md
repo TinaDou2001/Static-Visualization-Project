@@ -12,7 +12,7 @@ I'm facing one significant data challenge that I plan to address before the fina
 
 ## Describe each of the provided images with 2-3 sentences to give the context and how it relates to your goal.
 
-![](mock_visualizations/visualization1.png)
+![alt text](image.png)
 
 This chart shows how the total value of U.S. food imports has changed from 1999 to 2024. 
 Each point represents one year’s total import value (in millions of dollars), connected by a teal line to highlight overall growth. 
@@ -84,6 +84,7 @@ The bubbles make it hard to extract a clear pattern compared with previous visua
 
 I included this chart as an experimental design to explore whether combining “value” and “diversity” in one space could highlight interesting relationships, 
 but in practice it reinforced the importance of prioritizing readability and single-variable clarity in future iterations.
+
 Tip: The markdown syntax ![](image-name.png) will let you embed images directly, or you can number them and describe them by number in this file.
 
 ## What form do you envision your final narrative taking? (e.g. An article incorporating the images? A poster? An infographic?)
