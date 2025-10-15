@@ -13,77 +13,63 @@ I'm facing one significant data challenge that I plan to address before the fina
 ## Describe each of the provided images with 2-3 sentences to give the context and how it relates to your goal.
 
 ![alt text](image.png)
-
-This chart shows how the total value of U.S. food imports has changed from 1999 to 2024. 
-Each point represents one year’s total import value (in millions of dollars), connected by a teal line to highlight overall growth. 
-The steady upward trajectory reflects both increasing global trade volumes and rising food prices. 
-This serves as an opening overview in my narrative, establishing the scale and long-term upward trend before examining what commodities and partner countries drive that growth.
+This chart introduces the overall trajectory of U.S. food import value across the available years in the dataset. 
+After cleaning the data to remove world-level aggregates and non-monetary units, the line represents the sum of all import values (in millions of dollars) for each year. 
+The trend provides a clear starting point for understanding how U.S. food imports have grown and fluctuated over time, 
+forming the baseline context for deeper analyses by category and country in later visuals.
 
 ![alt text](image-1.png)
+This stacked percentage area chart visualizes how the composition of U.S. food imports has evolved over time across all available categories. 
+Each band represents a category’s share of total imports in a given year, with the height normalized to 100%.
 
-This stacked area chart builds directly on the first visualization. 
-While the first figure showed the total growth of food imports, this one decomposes that growth by category. 
-Each band’s thickness represents the total dollar value of that category in a given year. 
-The chart reveals that imports have not only increased overall but that some categories have expanded more rapidly than others. 
-Keeping the scale in raw dollar terms emphasizes both the magnitude of import growth and the changing composition of the U.S. food supply.
+The inclusion of all categories highlights the broad diversity of imported food products—from animal and plant commodities to processed goods and specialty items. 
+While some categories maintain a relatively stable share, others fluctuate substantially across the years, revealing shifts in consumer demand, production costs, and trade policies.
+
+The chart uses a non-default color palette to help differentiate overlapping regions and draw attention to structural changes rather than year-to-year noise. 
+This visualization builds directly on the overall trend in Visualization 1, adding context about what kinds of goods are driving the long-term increase in import value.
+
 
 ![alt text](image-2.png)
 ![alt text](image-3.png)
+This horizontal bar chart ranks the eight countries that have cumulatively exported the most food to the United States across all available years. 
+Each bar’s length reflects the total import value in millions of dollars. 
+Canada and Mexico lead the list by a large margin, followed by other major suppliers such as China.
 
-The next two bar charts identify the countries that supply the greatest total value of food imports to the United States. 
-Each bar’s height corresponds to the cumulative import value in millions of dollars, sorted from largest to smallest. 
-Canada and Mexico dominate, reflecting the importance of North American trade under long-standing agreements such as NAFTA/USMCA, while countries such as China contribute smaller but significant shares. 
-This visualization follows the previous two by shifting the focus from overall trends to the global origins of those imports, setting the stage for later charts that explore regional patterns and specific commodities.
-
-What seems interesting to me is that Italy is in the top 3, making me wonder what it actually exports to America?
+The horizontal layout and color-coded bars make cross-country comparisons straightforward, while limiting the display to the top eight ensures clarity without losing key context about the U.S.’s major long-term trading partners.
 
 ![alt text](image-4.png)
-
-This choropleth map uses geographic shading to display where U.S. food imports originate. 
-Each country’s color corresponds to the total dollar value of food exported to the United States, with deeper red hues indicating larger trade volumes. 
-The map highlights North American partners such as Canada and Mexico as the dominant exporters, while other regions appear lighter, reflecting smaller shares or missing data.
-
-To construct the map, I first reviewed Altair’s documentation on mark_geoshape() but struggled with the data-merging step needed to join import totals with country geometries. 
-I consulted ChatGPT for guidance on performing that merge correctly with GeoPandas and Altair. 
-Although the final visualization works as intended, I am personally not a big fan of it—the dataset includes a limited number of countries, which reduces the richness of the spatial comparison. 
-Nevertheless, it contributes a useful geographic perspective to my overall narrative.
+This visualization isolates the two largest U.S. food import partners — Canada and Mexico — to examine how their contributions have changed over time.
+The chart shows that both countries exhibit steady growth in export value to the U.S..
+The dual-line comparison reinforces the geographic concentration seen in earlier charts while hinting at differing growth dynamics between the two neighbors.
 
 ![alt text](image-5.png)
-
-This donut chart displays the proportion of total U.S. food import value accounted for by each major category. 
-The angle of each wedge corresponds to its share of total import spending, while color differentiates categories. 
-The visualization provides a compact overview of how U.S. food imports are distributed across sectors such as animal products, plants, and processed foods. 
-It helps transition from the earlier time-series visualizations to a static summary of relative importance.
-
-I considered creating a stacked bar chart instead but chose a donut because it communicates overall proportions more directly. 
-While pie-style visuals are not ideal for precise comparison, they work well here to show the dominance of certain broad categories.
+This heatmap visualizes how the value of U.S. food imports changed across categories and years.
+Darker cells indicate higher import volumes, revealing structural shifts.
+The visual highlights how diversification in imported foods has grown alongside globalization and trade liberalization.
 
 ![alt text](image-6.png)
-
-This stacked percentage area chart shows how different food categories’ shares of total U.S. imports have evolved over time. 
-Each band’s height represents its proportional contribution to total import value for that year, normalized to 100%. 
-The use of normalized stacking highlights shifts in composition whether certain categories are gaining or losing share—rather than changes in absolute size.
-
-I chose this format to emphasize structural change instead of total volume, since previous charts already captured overall growth. 
-This chart reveals which sectors expanded or declined in importance over the years and provides a more balanced comparison between categories of very different scales.
-
 ![alt text](image-7.png)
-
-This visualization displays each food category’s import trend over time using a set of small multiple line charts. 
-Each panel focuses on one category, allowing direct comparison of patterns across sectors while preventing the largest categories from overpowering the smaller ones. 
-The combination of line and point marks makes year-to-year fluctuations easy to follow.
-
-I chose the faceted design to make structural patterns clearer — for example, which categories show steady growth versus volatility. 
-It complements the earlier stacked percentage chart by presenting the absolute trends behind the relative shares, offering a detailed, category-level perspective within the overall import system.
+This visualization decomposes Canada’s food exports to the United States into their underlying product categories and commodities. 
+Each rectangle’s size represents the total import value, with darker tones denoting higher volumes.
+The treemap reveals that Canada’s largest contributions come from Meats and Grains, followed by Dairy and Beverages. 
+The visualization highlights how trade relationships are concentrated in specific commodity clusters, reflecting Canada’s strong agricultural export sectors and North American supply-chain integration.
 
 ![alt text](image-8.png)
+This visualization replaces the faceted small-multiples view with a motion-based trail plot that 
+emphasizes the intensity and trajectory of import growth across categories. 
+Each line’s thickness represents the magnitude of total imports in a given year, 
+creating a visual sense of "momentum" that highlights both scale and trend simultaneously.
 
-The size of each circle reflects total import value, while color intensity corresponds to the number of commodities within that category. 
-Although the encoding captures multiple dimensions simultaneously, I found the result difficult to interpret because of visual clutter and overlapping points. 
-The bubbles make it hard to extract a clear pattern compared with previous visualizations.
+Compared to earlier visualizations, this design conveys not only direction (upward or downward) 
+but also relative strength — thicker trails show where imports expanded most aggressively. 
+For example, large trails for categories such as Meats or Grains indicate dominant and sustained growth,
+while thinner, more fluctuating paths represent smaller or more volatile sectors.
 
-I included this chart as an experimental design to explore whether combining “value” and “diversity” in one space could highlight interesting relationships, 
-but in practice it reinforced the importance of prioritizing readability and single-variable clarity in future iterations.
+I chose this chart type because it visually balances readability with motion, making 
+structural differences across categories feel dynamic rather than static. 
+It complements the earlier stacked area chart by shifting the focus from composition (shares) 
+to movement (change velocity), reinforcing the story of accelerating U.S. food import demand.
+
 
 Tip: The markdown syntax ![](image-name.png) will let you embed images directly, or you can number them and describe them by number in this file.
 
