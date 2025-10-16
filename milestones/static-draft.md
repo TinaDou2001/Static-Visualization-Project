@@ -4,19 +4,18 @@ Tina Dou
 
 ## What is your current goal? Has it changed since the proposal?
 
-My current goal is to create a compelling narrative about U.S. food import patterns, with a specific focus on consumer trends and category-level analysis. While my original proposal looked at overall food imports, I've refined my focus to drill down into specific food categories like meats, beverages, and produce to tell more engaging stories about American consumption habits. I want to move beyond generic overall trends and explore questions like: What types of meat does America import most? How have beverage preferences changed over time? Which countries specialize in exporting specific food categories to the U.S.?
+My current goal is to create a compelling narrative about U.S. food import patterns, with a specific focus on consumer trends and category-level analysis. While my original proposal looked at overall food imports, I've refined my focus to drill down into specific food categories and countries.
 
 ## Are there data challenges you are facing? Are you currently depending on mock data?
 
-I'm facing one significant data challenge that I plan to address before the final submission: data duplication in commodity categories. The dataset contains both aggregate categories (like "Total live animals") and their subcomponents, which means some visualizations may be double-counting values. For example, "Total live animals" likely includes all the individual animal categories beneath it. I'm currently using the raw data but will need to filter out these aggregate categories to ensure accurate analysis. This is particularly important for charts that show composition or market share.
+I'm facing one significant data challenge that I plan to address before the final submission: data duplication in commodity categories. The dataset contains both aggregate categories (like "Total live animals") and their subcomponents, which means some visualizations may be double-counting values. For example, "Total live animals" likely includes all the individual animal categories beneath it. However, I have initiated the data cleaning process and plan to refine it in the future.
 
 ## Describe each of the provided images with 2-3 sentences to give the context and how it relates to your goal.
 
 ![alt text](image.png)
 This chart introduces the overall trajectory of U.S. food import value across the available years in the dataset. 
 After cleaning the data to remove world-level aggregates and non-monetary units, the line represents the sum of all import values (in millions of dollars) for each year. 
-The trend provides a clear starting point for understanding how U.S. food imports have grown and fluctuated over time, 
-forming the baseline context for deeper analyses by category and country in later visuals.
+The trend provides a clear starting point for understanding how U.S. food imports have grown and fluctuated over time, forming the baseline context for deeper analyses by category and country in later visuals.
 
 ![alt text](image-1.png)
 This stacked percentage area chart visualizes how the composition of U.S. food imports has evolved over time across all available categories. 
@@ -31,11 +30,11 @@ This visualization builds directly on the overall trend in Visualization 1, addi
 
 ![alt text](image-2.png)
 ![alt text](image-3.png)
-This horizontal bar chart ranks the eight countries that have cumulatively exported the most food to the United States across all available years. 
+The bar chart ranks the eight countries that have cumulatively exported the most food to the United States across all available years. 
 Each bar’s length reflects the total import value in millions of dollars. 
 Canada and Mexico lead the list by a large margin, followed by other major suppliers such as China.
 
-The horizontal layout and color-coded bars make cross-country comparisons straightforward, while limiting the display to the top eight ensures clarity without losing key context about the U.S.’s major long-term trading partners.
+The layout and color-coded bars make cross-country comparisons straightforward, while limiting the display to the top eight ensures clarity without losing key context about the U.S.’s major long-term trading partners.
 
 ![alt text](image-4.png)
 This visualization isolates the two largest U.S. food import partners — Canada and Mexico — to examine how their contributions have changed over time.
