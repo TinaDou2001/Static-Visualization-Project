@@ -13,11 +13,13 @@ I'm facing one significant data challenge that I plan to address before the fina
 ## Describe each of the provided images with 2-3 sentences to give the context and how it relates to your goal.
 
 ![alt text](image.png)
+
 This chart introduces the overall trajectory of U.S. food import value across the available years in the dataset. 
 After cleaning the data to remove world-level aggregates and non-monetary units, the line represents the sum of all import values (in millions of dollars) for each year. 
 The trend provides a clear starting point for understanding how U.S. food imports have grown and fluctuated over time, forming the baseline context for deeper analyses by category and country in later visuals.
 
 ![alt text](image-1.png)
+
 This stacked percentage area chart visualizes how the composition of U.S. food imports has evolved over time across all available categories. 
 Each band represents a category’s share of total imports in a given year, with the height normalized to 100%.
 
@@ -30,6 +32,7 @@ This visualization builds directly on the overall trend in Visualization 1, addi
 
 ![alt text](image-2.png)
 ![alt text](image-3.png)
+
 The bar chart ranks the eight countries that have cumulatively exported the most food to the United States across all available years. 
 Each bar’s length reflects the total import value in millions of dollars. 
 Canada and Mexico lead the list by a large margin, followed by other major suppliers such as China.
@@ -37,23 +40,27 @@ Canada and Mexico lead the list by a large margin, followed by other major suppl
 The layout and color-coded bars make cross-country comparisons straightforward, while limiting the display to the top eight ensures clarity without losing key context about the U.S.’s major long-term trading partners.
 
 ![alt text](image-4.png)
+
 This visualization isolates the two largest U.S. food import partners — Canada and Mexico — to examine how their contributions have changed over time.
 The chart shows that both countries exhibit steady growth in export value to the U.S..
 The dual-line comparison reinforces the geographic concentration seen in earlier charts while hinting at differing growth dynamics between the two neighbors.
 
 ![alt text](image-5.png)
+
 This heatmap visualizes how the value of U.S. food imports changed across categories and years.
 Darker cells indicate higher import volumes, revealing structural shifts.
 The visual highlights how diversification in imported foods has grown alongside globalization and trade liberalization.
 
 ![alt text](image-6.png)
 ![alt text](image-7.png)
+
 This visualization decomposes Canada’s food exports to the United States into their underlying product categories and commodities. 
 Each rectangle’s size represents the total import value, with darker tones denoting higher volumes.
 The treemap reveals that Canada’s largest contributions come from Meats and Grains, followed by Dairy and Beverages. 
 The visualization highlights how trade relationships are concentrated in specific commodity clusters, reflecting Canada’s strong agricultural export sectors and North American supply-chain integration.
 
 ![alt text](image-8.png)
+
 This visualization replaces the faceted small-multiples view with a motion-based trail plot that 
 emphasizes the intensity and trajectory of import growth across categories. 
 Each line’s thickness represents the magnitude of total imports in a given year, 
