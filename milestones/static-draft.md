@@ -54,10 +54,10 @@ The visual highlights how diversification in imported foods has grown alongside 
 ![alt text](image-6.png)
 ![alt text](image-7.png)
 
-This visualization decomposes Canada’s food exports to the United States into their underlying product categories and commodities. 
+This visualization decomposes Canada and Mexico’s food exports to the United States into their underlying product categories and commodities. 
 Each rectangle’s size represents the total import value, with darker tones denoting higher volumes.
-The treemap reveals that Canada’s largest contributions come from Meats and Grains, followed by Dairy and Beverages. 
-The visualization highlights how trade relationships are concentrated in specific commodity clusters, reflecting Canada’s strong agricultural export sectors and North American supply-chain integration.
+The treemap reveals that Canada’s largest contributions come from Meats and Grains, followed by Dairy and Beverages, while Mexico's comes from fresh vegetables. 
+The visualization highlights how trade relationships are concentrated in specific commodity clusters.
 
 ![alt text](image-8.png)
 
