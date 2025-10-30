@@ -1,0 +1,10 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 2rem auto;
+  max-width: 900px;
+  line-height: 1.6;
+}
+header { text-align: center; margin-bottom: 2rem; }
+nav a { margin: 0 1rem; text-decoration: none; color: #006847; }
+nav a:hover { text-decoration: underline; }
+section { margin-bottom: 2rem; }
